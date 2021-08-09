@@ -13,6 +13,7 @@ namespace Assginments
                               "Type 2: For Calculate Date of Birth.\n" +
                               "Type 3: For Remove Words From Text.\n" +
                               "Type 4: For Json to List\n" +
+                              "Type 5: For Google custom search v1\n" +
                               "Enter Your Choice: ");
 
                 choice = Convert.ToInt32(Console.ReadLine());
@@ -31,6 +32,9 @@ namespace Assginments
                         break;
                     case 4:
                         JsonToList.GetJsonFile("C:\\Datagrokr\\c#\\Assignments\\Assignments\\Share\\data.json");
+                        break;
+                    case 5:
+                        HttpRequestToGoogle.ShowUrlResult();
                         break;
                     default:
                         Console.WriteLine("Invalid Choice!");
