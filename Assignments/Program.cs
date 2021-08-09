@@ -14,6 +14,7 @@ namespace Assginments
                               "Type 3: For Remove Words From Text.\n" +
                               "Type 4: For Json to List\n" +
                               "Type 5: For Google custom search v1\n" +
+                              "Type 6: For Supermarket Order\n" +
                               "Enter Your Choice: ");
 
                 choice = Convert.ToInt32(Console.ReadLine());
@@ -35,6 +36,9 @@ namespace Assginments
                         break;
                     case 5:
                         HttpRequestToGoogle.ShowUrlResult();
+                        break;
+                    case 6:
+                        Supermarket.SupermarketCaller();
                         break;
                     default:
                         Console.WriteLine("Invalid Choice!");
