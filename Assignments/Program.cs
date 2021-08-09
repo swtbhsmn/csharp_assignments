@@ -10,6 +10,7 @@ namespace Assginments
             {
                 int choice;
                 Console.Write("Type 1: For Word Frequency Problem.\n" +
+                              "Type 2: For Calculate Date of Birth.\n" +
                               "Enter Your Choice: ");
 
                 choice = Convert.ToInt32(Console.ReadLine());
@@ -19,6 +20,9 @@ namespace Assginments
                 {
                     case 1:
                         WordFrequency.WordFrequencyCaller();
+                        break;
+                    case 2:
+                        CalculateDateOfBirth.CalculateAgeCaller();
                         break;
                     default:
                         Console.WriteLine("Invalid Choice!");
